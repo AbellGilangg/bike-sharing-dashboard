@@ -8,8 +8,8 @@ st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 @st.cache_data
 def load_data():
     try:
-        day_df = pd.read_csv("dashboard/main_data.csv")
-        hour_df = pd.read_csv("data/hour.csv")
+        day_df = pd.read_csv("main_data.csv")
+        hour_df = pd.read_csv("hour.csv")
     except FileNotFoundError:
         day_df = pd.read_csv("main_data.csv")
         hour_df = pd.read_csv("hour.csv")
