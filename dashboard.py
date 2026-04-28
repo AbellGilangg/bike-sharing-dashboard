@@ -6,7 +6,7 @@ import streamlit as st
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 
 def load_data():
-    day_df = pd.read_csv("dashboard/main_data.csv")
+    day_df = pd.read_csv("main_data.csv")
     hour_df = pd.read_csv("data/hour.csv")
     
     day_df["dteday"] = pd.to_datetime(day_df["dteday"])
