@@ -5,7 +5,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 
-day_df = pd.read_csv("dashboard/main_data.csv")
+day_df = pd.read_csv("main_data.csv")
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
 
 season_map = {1: "Spring", 2: "Summer", 3: "Fall", 4: "Winter"}
